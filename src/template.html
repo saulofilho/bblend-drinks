@@ -17,13 +17,36 @@
 </head>
 
 <body>
+    <div class="age-overlay" style="display: block;">
+        <div class="age-gate">
+            <img src="/arquivos/logos-bb-brastemp-rodape.png" alt="logo overlay" />
+            <p>Olá!</p>
+            <p>Você tem mais de 18 anos?</p>
+            <div class="age-gate-btns">
+                <a href="/">Sim</a>
+                <a href="https://www.ambev.com.br/sustentabilidade/consumo-inteligente">Não</a>
+            </div>
+            <div class="age-gate-remember">
+                <label for="age-gate">
+                    <input type="checkbox" name="remember-age" />
+                    Lembrar minha resposta em futuros acessos.
+                </label>
+            </div>
+            <p class="age-gate-text">
+                Continuando você estará aceitando os 
+                <a class="age-gate-link" href="/" target="_blank">"Termos e Condições"</a>,
+                <a class="age-gate-link" href="/"> "Política de Privacidade"</a> e 
+                <a class="age-gate__link" href="/" target="_blank">"Políticas de Cookies"</a>
+            </p>
+        </div>
+    </div>
     <!--header-->
     <vtex:template id="bblend-drinks-header" />
     <!--header-->
     <main>
 <!--mobile-->
         <section class="container-fluid hide-min-768">
-            <!--destaque-->
+            <!--destaque mob-->
             <div class="row destaque-mobile">
                 <div class="container">
                     <div class="text-apresenta">
@@ -49,7 +72,7 @@
                     </div>
                 </div>
             </div>
-            <!--mixologista-->
+            <!--mixologista mob-->
             <div class="row mixologista-mob">
                 <div class="container">
                     <div class="text-mixo-mob">
@@ -65,7 +88,7 @@
                     </div>
                 </div>
             </div>
-            <!--insta-->
+            <!--insta mob-->
             <div class="row insta-mob">
                 <div class="container">
                     <div class="text-inta-mob-tit">
@@ -126,8 +149,8 @@
                     </div>
                 </div>
             </div>
-            <!--drinks-->
-            <!--gin-->
+            <!--drinks mob-->
+            <!--gin mob-->
             <div class="row gin-mob">
                 <div class="container-fluid">
                     <div class="row">
@@ -188,12 +211,17 @@
                                 </span>
                                 os modos de preparo
                             </p>
-                            <img class="btn-seta-mob" src="/arquivos/seta-verde.png" alt="" />
+                            <img class="btn-seta-gin-mob" src="/arquivos/seta-verde.png" alt="" />
                         </button>
                     </div>
                 </div>
             </div>
-            <!--orange-->
+            <span class="img-seta-gin-mob">
+                <div class="img-btn-seta-mob">
+                    <img class="btn-seta-gin-mob" src="/arquivos/passo-a-passo-gin.png" alt="" />
+                </div>
+            </span>
+            <!--orange mob-->
             <div class="row orange-mob">
                 <div class="container-fluid">
                     <div class="row">
@@ -236,7 +264,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row infos-btn-row-mob">
+                            <div class="row infos-btn-row-orange-mob">
                                 <div class="btn-orange-mob">
                                     <button role="button">
                                         <a href="/">Quero meu drink</a>
@@ -253,12 +281,17 @@
                                 </span>
                                 os modos de preparo
                             </p>
-                            <img class="btn-seta-mob" src="/arquivos/seta-laranja.png" alt="" />
+                            <img class="btn-seta-orange-mob" src="/arquivos/seta-laranja.png" alt="" />
                         </button>
                     </div>
                 </div>
             </div>
-            <!--skol-->
+            <span class="img-seta-orange-mob">
+                <div class="img-btn-seta-mob">
+                    <img class="btn-seta-orange-mob" src="/arquivos/passo-a-passo-spritz.png" alt="" />
+                </div>
+            </span>
+            <!--skol mob-->
             <div class="row skol-mob">
                 <div class="container-fluid">
                     <div class="row">
@@ -321,12 +354,17 @@
                                 </span>
                                 os modos de preparo
                             </p>
-                            <img class="btn-seta-mob" src="/arquivos/seta-azul.png" alt="" />
+                            <img class="btn-seta-skol-mob" src="/arquivos/seta-azul.png" alt="" />
                         </button>
                     </div>
                 </div>
             </div>
-            <!--features-carousel-->
+            <span class="img-seta-skol-mob">
+                <div class="img-btn-seta-mob">
+                    <img class="btn-seta-skol-mob" src="/arquivos/passo-a-passo-skol.png" alt="" />
+                </div>
+            </span>
+            <!--features-carousel mob-->
             <div class="row feat-mob">
                 <div class="container-fluid" id="slideshow">
                     <div class="slick">
@@ -410,7 +448,7 @@
                     </div>
                 </div>
             </div>
-            <!--maquina-->
+            <!--maquina mob-->
             <div class="row maquina-mob">
                 <div class="container-fluid">
                     <div class="img-jeito-mob">
@@ -421,12 +459,12 @@
                     </div>
                     <div class="btn-maquina-mob">
                         <button role="button">
-                            <a href="/">Eu quero!</a>
+                            <a href="https://loja.bblend.com.br/landing/maquinas-bblend" target="_blank">Eu quero!</a>
                         </button>
                     </div>
                 </div>
             </div>
-            <!--venda-->
+            <!--venda mob-->
             <div class="row venda-mob">
                 <div class="container-fluid">
                     <div class="tit-venda-mob">
@@ -441,6 +479,7 @@
                             brinde exclusivo para comprar seu drink!
                         </p>
                     </div>
+                    <!--venda gin mob-->
                     <div class="venda-gin-mob">
                             <div class="img-venda-mob">
                                 <img src="/arquivos/taca-acrilico-gin.png" alt="" />
@@ -458,15 +497,7 @@
                                 </div>
                             </div>
                             <div class="row box-precos">
-                                <div class="col preco-ori">
-                                    <p>
-                                        PREÇO ORIGINAL
-                                        <br />
-                                        <span class="preco-span-mob">R$ 9,99</span><span class="uni-span-mob">(UNI.)</span>
-                                    </p>
-                                </div>
-                                <div class="col preco-promo">
-                                </div>
+                                <img src="/arquivos/box-preco-completo.png" alt="box precos" />
                             </div>
                             <div class="seg-lote">
                                 <p>
@@ -488,10 +519,54 @@
                                     <a href="/">Quero comprar</a>
                                 </button>
                             </div>
+                            <!--modal gin saiba-mais mob-->
                             <div class="text-saiba-mob">
-                                <a href="/">Saiba mais</a>
+                                <a href="#" data-toggle="modal" data-target="#bannermodalGin" class="smoothscroll">Saiba mais</a>
+                            </div>
+                            <div class="modal fade" id="bannermodalGin" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">Cápsula Gin tônica</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="/arquivos/capsula-modal-gin.png" alt="capsula gin" />
+                                            <p>
+                                                <span>
+                                                    Descrição
+                                                </span>
+                                                Tecnologia Inovadora e Exclusiva da Brastemp.
+                                                Prepare + de 30 Opções de Bebidas Diferentes.
+                                                Somos a 1ª Plataforma de
+                                                Bebidas em Cápsulas all.in.one do Mundo.
+                                                Conheça a Un.Plug. A 1ª all.in.one do Mundo.
+                                                Tecnologia Brastemp.
+                                                Prepare + de
+                                                30 Opções.
+                                                <br />
+                                                <br />
+                                                <span>
+                                                    Ingredientes:
+                                                </span>
+                                                Tecnologia Inovadora e Exclusiva da Brastemp.
+                                                Prepare + de 30 Opções de Bebidas Diferentes.
+                                                Somos a 1ª Plataforma de
+                                                Bebidas em Cápsulas all.in.one do Mundo.
+                                                Conheça a Un.Plug. A 1ª all.in.one do Mundo.
+                                                Tecnologia Brastemp.
+                                                Prepare + de
+                                                30 Opções.
+                                                <span>
+                                                    NÃO CONTÉM GLÚTEN.
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                     </div>
+                    <!--venda orange saiba-mais mob-->
                     <div class="venda-orange-mob">
                         <div class="img-venda-mob">
                             <img src="/arquivos/taca-acrilico-spritz.png" alt="" />
@@ -509,15 +584,7 @@
                             </div>
                         </div>
                         <div class="row box-precos">
-                            <div class="col preco-ori">
-                                <p>
-                                    PREÇO ORIGINAL
-                                    <br />
-                                    <span class="preco-span-mob">R$ 9,99</span><span class="uni-span-mob">(UNI.)</span>
-                                </p>
-                            </div>
-                            <div class="col preco-promo">
-                            </div>
+                            <img src="/arquivos/box-preco-completo.png" alt="box precos" />
                         </div>
                         <div class="seg-lote">
                             <p>
@@ -539,10 +606,54 @@
                                 <a href="/">Quero comprar</a>
                             </button>
                         </div>
+                        <!--modal orange saiba-mais mob-->
                         <div class="text-saiba-mob">
-                            <a href="/">Saiba mais</a>
+                            <a href="#" data-toggle="modal" data-target="#bannermodalOrange" class="smoothscroll">Saiba mais</a>
+                        </div>
+                        <div class="modal fade" id="bannermodalOrange" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Cápsula Orange Spritz</h5>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="/arquivos/capsula-modal-spritz.png" alt="capsula gin" />
+                                        <p>
+                                            <span>
+                                                Descrição
+                                            </span>
+                                            Tecnologia Inovadora e Exclusiva da Brastemp.
+                                            Prepare + de 30 Opções de Bebidas Diferentes.
+                                            Somos a 1ª Plataforma de
+                                            Bebidas em Cápsulas all.in.one do Mundo.
+                                            Conheça a Un.Plug. A 1ª all.in.one do Mundo.
+                                            Tecnologia Brastemp.
+                                            Prepare + de
+                                            30 Opções.
+                                            <br />
+                                            <br />
+                                            <span>
+                                                Ingredientes:
+                                            </span>
+                                            Tecnologia Inovadora e Exclusiva da Brastemp.
+                                            Prepare + de 30 Opções de Bebidas Diferentes.
+                                            Somos a 1ª Plataforma de
+                                            Bebidas em Cápsulas all.in.one do Mundo.
+                                            Conheça a Un.Plug. A 1ª all.in.one do Mundo.
+                                            Tecnologia Brastemp.
+                                            Prepare + de
+                                            30 Opções.
+                                            <span>
+                                                NÃO CONTÉM GLÚTEN.
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <!--venda skol saiba-mais mob-->
                     <div class="venda-skol-mob">
                         <div class="img-venda-mob">
                             <img src="/arquivos/taca-skol.png" alt="" />
@@ -560,15 +671,7 @@
                             </div>
                         </div>
                         <div class="row box-precos">
-                            <div class="col preco-ori">
-                                <p>
-                                    PREÇO ORIGINAL
-                                    <br />
-                                    <span class="preco-span-mob">R$ 9,99</span><span class="uni-span-mob">(UNI.)</span>
-                                </p>
-                            </div>
-                            <div class="col preco-promo">
-                            </div>
+                            <img src="/arquivos/box-preco-completo.png" alt="box precos" />
                         </div>
                         <div class="seg-lote">
                             <p>
@@ -590,13 +693,56 @@
                                 <a href="/">Quero comprar</a>
                             </button>
                         </div>
+                        <!--modal skol saiba-mais mob-->
                         <div class="text-saiba-mob">
-                            <a href="/">Saiba mais</a>
+                            <a href="#" data-toggle="modal" data-target="#bannermodalSkol" class="smoothscroll">Saiba mais</a>
+                        </div>
+                        <div class="modal fade" id="bannermodalSkol" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Cápsula Skol Beats</h5>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="/arquivos/capsula-modal-skol.png" alt="capsula gin" />
+                                        <p>
+                                            <span>
+                                                Descrição
+                                            </span>
+                                            Tecnologia Inovadora e Exclusiva da Brastemp.
+                                            Prepare + de 30 Opções de Bebidas Diferentes.
+                                            Somos a 1ª Plataforma de
+                                            Bebidas em Cápsulas all.in.one do Mundo.
+                                            Conheça a Un.Plug. A 1ª all.in.one do Mundo.
+                                            Tecnologia Brastemp.
+                                            Prepare + de
+                                            30 Opções.
+                                            <br />
+                                            <br />
+                                            <span>
+                                                Ingredientes:
+                                            </span>
+                                            Tecnologia Inovadora e Exclusiva da Brastemp.
+                                            Prepare + de 30 Opções de Bebidas Diferentes.
+                                            Somos a 1ª Plataforma de
+                                            Bebidas em Cápsulas all.in.one do Mundo.
+                                            Conheça a Un.Plug. A 1ª all.in.one do Mundo.
+                                            Tecnologia Brastemp.
+                                            Prepare + de
+                                            30 Opções.
+                                            <span>
+                                                NÃO CONTÉM GLÚTEN.
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!--duvidas-->
+            <!--duvidas mob-->
             <div class="row duvidas-mob">
                 <div class="container-fluid">
                     <h2 class="tit-duvidas-mob">Ainda com dúvidas?</h2>
@@ -764,7 +910,7 @@
 <!--desktop-->
         <section class="container-fluid hide-max-768">
             <!--destaque desk-->
-            <div class="row destaque-desk">
+            <div class="row destaque-desk" id="conheca">
                 <div class="container">
                     <div class="text-apresenta-desk">
                         <p>
@@ -790,7 +936,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row logos-sociais">
+            <div class="row logos-sociais" id="compartilhe">
                 <div class="logo-amb-bras col-md-6">
                     <img src="/arquivos/ambev-bras.png" alt="" />
                 </div>
@@ -807,7 +953,7 @@
                 </div>
             </div>
             <!--mixologista desk-->
-            <div class="row mixologista-desk">
+            <div class="row mixologista-desk" id="mixologista">
                 <div class="container">
                     <div class="text-mixo-desk">
                         <p>
@@ -895,7 +1041,7 @@
             </div>
             <!--drinks desk-->
             <!--gin desk-->
-            <div class="row gin-desk">
+            <div class="row gin-desk" id="drinks">
                 <div class="container">
                     <div class="row">
                         <div class="col-4 gin-left-desk">
@@ -905,6 +1051,10 @@
                                 Igual ao que você ama,
                                 <br />
                                 de um jeito diferente.
+                            </p>
+                            <p class="text2-gin-desk">
+                                A combinação clássica do aromático e amado sabor do Gin com a tradicional Tônica. 
+                                Refrescante, perfeito para reunir os amigos e curtir seu próprio happy hour.
                             </p>
                             <div class="infos-drinks-desk">
                                 <div class="info-left">
@@ -986,6 +1136,11 @@
                                 A sensação do verão europeu para a
                                 sua Taça.
                             </p>
+                            <p class="text2-orange-desk">
+                                Sucesso na Europa, em Nova York e agora no Brasil.
+                                É um drink perfeito para qualquer ocasião, destacando
+                                sua refrescância que oscila entre os aromas amargos, cítricos e a perlage do espumante.
+                            </p>
                             <div class="infos-drinks-desk">
                                 <div class="info-left">
                                     <div class="num-orange-desk">
@@ -1034,12 +1189,15 @@
                         <div class="col-4 skol-left-desk">
                             <img src="/arquivos/titulo-skol-desktop.png" alt="" />
                             <p class="tit-skol-mob">
-                                deats
+                                beats
                                 <br />
                                 senses
                             </p>
                             <p class="text-skol-desk">
                                 Moderna e à frente do seu tempo, vai acompanhar seus melhores momentos.
+                            </p>
+                            <p class="text2-skol-desk">
+                                Moderna e inovadora. Um sabor cítrico, refrescante e surpreendente.
                             </p>
                             <div class="infos-drinks-desk">
                                 <div class="info-left">
@@ -1209,7 +1367,7 @@
                             </div>
                             <div class="btn-maquina-desk">
                                 <button role="button">
-                                    <a href="/">Quero meu drink</a>
+                                    <a href="https://loja.bblend.com.br/landing/maquinas-bblend" target="_blank">Quero meu drink</a>
                                 </button>
                             </div>
                         </div>
@@ -1217,7 +1375,7 @@
                 </div>
             </div>
             <!--venda desk-->
-            <div class="row venda-mob">
+            <div class="row venda-mob" id="compre-agora">
                 <div class="container">
                     <div class="texts-venda-desk">
                         <div class="tit-venda-desk">
@@ -1234,6 +1392,7 @@
                         </div>
                     </div>
                     <div class="row">
+                        <!--venda gin desktop-->
                         <div class="col">
                             <div class="venda-gin-mob">
                                 <div class="img-venda-mob">
@@ -1252,15 +1411,7 @@
                                     </div>
                                 </div>
                                 <div class="row box-precos">
-                                    <div class="col preco-ori">
-                                        <p>
-                                            PREÇO ORIGINAL
-                                            <br />
-                                            <span class="preco-span-mob">R$ 9,99</span><span class="uni-span-mob">(UNI.)</span>
-                                        </p>
-                                    </div>
-                                    <div class="col preco-promo">
-                                    </div>
+                                    <img src="/arquivos/box-preco-completo.png" alt="box precos" />
                                 </div>
                                 <div class="seg-lote">
                                     <p>
@@ -1282,11 +1433,55 @@
                                         <a href="/">Quero comprar</a>
                                     </button>
                                 </div>
+                                <!--modal gin saiba-mais desk-->
                                 <div class="text-saiba-mob">
-                                    <a href="/">Saiba mais</a>
+                                    <a href="#" data-toggle="modal" data-target="#bannermodalGin" class="smoothscroll">Saiba mais</a>
+                                </div>
+                                <div class="modal fade" id="bannermodalGin" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title">Cápsula Gin tônica</h5>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="/arquivos/capsula-modal-gin.png" alt="capsula gin" />
+                                        <p>
+                                            <span>
+                                                Descrição
+                                            </span>
+                                            Tecnologia Inovadora e Exclusiva da Brastemp. 
+                                            Prepare + de 30 Opções de Bebidas Diferentes. 
+                                            Somos a 1ª Plataforma de
+                                            Bebidas em Cápsulas all.in.one do Mundo. 
+                                            Conheça a Un.Plug. A 1ª all.in.one do Mundo. 
+                                            Tecnologia Brastemp. 
+                                            Prepare + de
+                                            30 Opções.
+                                            <br />
+                                            <br />
+                                            <span>
+                                                Ingredientes:
+                                            </span>
+                                            Tecnologia Inovadora e Exclusiva da Brastemp. 
+                                            Prepare + de 30 Opções de Bebidas Diferentes. 
+                                            Somos a 1ª Plataforma de
+                                            Bebidas em Cápsulas all.in.one do Mundo. 
+                                            Conheça a Un.Plug. A 1ª all.in.one do Mundo. 
+                                            Tecnologia Brastemp. 
+                                            Prepare + de
+                                            30 Opções.
+                                            <span>
+                                                NÃO CONTÉM GLÚTEN.
+                                            </span>
+                                        </p>
+                                    </div>
+                                  </div>
+                                </div>
                                 </div>
                             </div>
                         </div>
+                        <!--venda orange desktop-->
                         <div class="col">
                             <div class="venda-orange-mob">
                                 <div class="img-venda-mob">
@@ -1305,15 +1500,7 @@
                                     </div>
                                 </div>
                                 <div class="row box-precos">
-                                    <div class="col preco-ori">
-                                        <p>
-                                            PREÇO ORIGINAL
-                                            <br />
-                                            <span class="preco-span-mob">R$ 9,99</span><span class="uni-span-mob">(UNI.)</span>
-                                        </p>
-                                    </div>
-                                    <div class="col preco-promo">
-                                    </div>
+                                    <img src="/arquivos/box-preco-completo.png" alt="box precos" />
                                 </div>
                                 <div class="seg-lote">
                                     <p>
@@ -1335,11 +1522,55 @@
                                         <a href="/">Quero comprar</a>
                                     </button>
                                 </div>
+                                <!--modal orange saiba-mais-->
                                 <div class="text-saiba-mob">
-                                    <a href="/">Saiba mais</a>
+                                    <a href="#" data-toggle="modal" data-target="#bannermodalOrange" class="smoothscroll">Saiba mais</a>
+                                </div>
+                                <div class="modal fade" id="bannermodalOrange" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-scrollable" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title">Cápsula Orange Spritz</h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img src="/arquivos/capsula-modal-spritz.png" alt="capsula gin" />
+                                                <p>
+                                                    <span>
+                                                        Descrição
+                                                    </span>
+                                                    Tecnologia Inovadora e Exclusiva da Brastemp.
+                                                    Prepare + de 30 Opções de Bebidas Diferentes.
+                                                    Somos a 1ª Plataforma de
+                                                    Bebidas em Cápsulas all.in.one do Mundo.
+                                                    Conheça a Un.Plug. A 1ª all.in.one do Mundo.
+                                                    Tecnologia Brastemp.
+                                                    Prepare + de
+                                                    30 Opções.
+                                                    <br />
+                                                    <br />
+                                                    <span>
+                                                        Ingredientes:
+                                                    </span>
+                                                    Tecnologia Inovadora e Exclusiva da Brastemp.
+                                                    Prepare + de 30 Opções de Bebidas Diferentes.
+                                                    Somos a 1ª Plataforma de
+                                                    Bebidas em Cápsulas all.in.one do Mundo.
+                                                    Conheça a Un.Plug. A 1ª all.in.one do Mundo.
+                                                    Tecnologia Brastemp.
+                                                    Prepare + de
+                                                    30 Opções.
+                                                    <span>
+                                                        NÃO CONTÉM GLÚTEN.
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <!--venda skol desktop-->
                         <div class="col">
                             <div class="venda-skol-mob">
                                 <div class="img-venda-mob">
@@ -1358,15 +1589,7 @@
                                     </div>
                                 </div>
                                 <div class="row box-precos">
-                                    <div class="col preco-ori">
-                                        <p>
-                                            PREÇO ORIGINAL
-                                            <br />
-                                            <span class="preco-span-mob">R$ 9,99</span><span class="uni-span-mob">(UNI.)</span>
-                                        </p>
-                                    </div>
-                                    <div class="col preco-promo">
-                                    </div>
+                                    <img src="/arquivos/box-preco-completo.png" alt="box precos" />
                                 </div>
                                 <div class="seg-lote">
                                     <p>
@@ -1388,8 +1611,51 @@
                                         <a href="/">Quero comprar</a>
                                     </button>
                                 </div>
+                                <!--modal skol saiba-mais-->
                                 <div class="text-saiba-mob">
-                                    <a href="/">Saiba mais</a>
+                                    <a href="#" data-toggle="modal" data-target="#bannermodalSkol" class="smoothscroll">Saiba mais</a>
+                                </div>
+                                <div class="modal fade" id="bannermodalSkol" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-scrollable" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title">Cápsula Skol Beats</h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img src="/arquivos/capsula-modal-skol.png" alt="capsula gin" />
+                                                <p>
+                                                    <span>
+                                                        Descrição
+                                                    </span>
+                                                    Tecnologia Inovadora e Exclusiva da Brastemp.
+                                                    Prepare + de 30 Opções de Bebidas Diferentes.
+                                                    Somos a 1ª Plataforma de
+                                                    Bebidas em Cápsulas all.in.one do Mundo.
+                                                    Conheça a Un.Plug. A 1ª all.in.one do Mundo.
+                                                    Tecnologia Brastemp.
+                                                    Prepare + de
+                                                    30 Opções.
+                                                    <br />
+                                                    <br />
+                                                    <span>
+                                                        Ingredientes:
+                                                    </span>
+                                                    Tecnologia Inovadora e Exclusiva da Brastemp.
+                                                    Prepare + de 30 Opções de Bebidas Diferentes.
+                                                    Somos a 1ª Plataforma de
+                                                    Bebidas em Cápsulas all.in.one do Mundo.
+                                                    Conheça a Un.Plug. A 1ª all.in.one do Mundo.
+                                                    Tecnologia Brastemp.
+                                                    Prepare + de
+                                                    30 Opções.
+                                                    <span>
+                                                        NÃO CONTÉM GLÚTEN.
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
