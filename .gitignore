@@ -63,5 +63,21 @@ typings/
 # DS_Store
 **/.DS_Store
 
+# build
+/build/*
+
 # speed-master
-/speed-master/*
+/speed-master/Gruntfile.coffee
+/speed-master/ISSUE_TEMPLATE.md
+/speed-master/package-lock.json
+/speed-master/README.md
+/speed-master/.gitignore
+/speed-master/LICENSE
+/speed-master/yarn.lock
+/speed-master/speed-middleware.coffee
+/speed-master/src/page-example/*
+/speed-master/src/coffee-example.coffee
+/speed-master/src/js-example.js
+/speed-master/src/less-example.less
+/speed-master/src/sass-example.scss
+/speed-master/src/sprite/*
